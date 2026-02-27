@@ -63,3 +63,28 @@ $
 We are asked to sum up $1*4+2*3+3*2+4*1$ which equals $20$
 
 = Node
+
+We are asked to sum all the balls making up a Pyramid. A pyramid is just 4 triangles of balls put togeather or problem 4.
+
+= Node
+
+How many ways can 7 cookies be split between 4 people where each person gets atleast 1 cookie. This looks like:
+
+$
+  P_1 + P_2 + P_3 + P_4 = 7
+$
+
+We can have a $D$ which will stand between each person and their minimum number of cookies.
+
+$
+  (D_1 + 1) + (D_2 + 1) + (D_3 + 1) + (D_4 + 1) = 7\
+  D_1 + D_2 + D_3 + D_4 = 3
+$
+
+We have 3 cookies left and 4 poeple who can get them:
+
+Lets make a list of possibilities:
+
+- $D_1 = 3$
+- $D_1 = 2, D_2 = 1$
+- $D_1 = 1, D_2 = 1, D_3 = 1$
