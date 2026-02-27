@@ -52,3 +52,14 @@ We are given a hexagon with verticies labeled $A - F$. Interestingly this look s
 We are given a path to a node that is 3 right and 3 down. Once again this is a 6 from the total walks and 3 from how many diffrent ways to move right.
 
 = Node
+
+We are given 4 triangles made up of an increasing number of points. We are asked to sum up to total number of dots. Notably triangle numbers exist, which are defined in such a way to solve this problem. so our awnser looks like:
+$
+  sum_(t=1)^4 sum_(n=1)^(4-t) 1
+$
+
+= Node
+
+We are asked to sum up $1*4+2*3+3*2+4*1$ which equals $20$
+
+= Node
