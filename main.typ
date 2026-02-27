@@ -36,3 +36,7 @@ Here we have 6 different badly flavored jellybeans that we can represent as $A -
 18. CDF
 19. CEF
 20. DEF
+
+#heading(bookmarked: false, level: 2)[Better Mode]
+
+Listing out all twenty elments works but sucks, so how could we make this easier to understand. well we have $6$ diffrent elements that we are choosing in any order, which is $binom(6, 3)$.
