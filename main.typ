@@ -1,7 +1,9 @@
 #set document(
   title: [Group Project 6C3]
 )
-#set heading(numbering: "I")
+#set heading(numbering: (first, ..other) =>
+  if other.pos().len() == 0 { return first }
+)
 #show heading: set align(center)
 #show heading: it => block[
   #emph(it.body)
@@ -39,4 +41,6 @@ Here we have 6 different badly flavored jellybeans that we can represent as $A -
 
 #heading(bookmarked: false, level: 2)[Better Mode]
 
-Listing out all twenty elments works but sucks, so how could we make this easier to understand. well we have $6$ diffrent elements that we are choosing in any order, which is $binom(6, 3)$.
+Listing out all twenty elments works but sucks, so how could we make this easier to understand. well we have $6$ diffrent elements that we are choosing in any order, which is $binom(6, 3)$. But how can we get this awnser? Well this is 6 choose 3. $6$ oviuslly comes from how many beans we have. $3$ comes from how many beans that we are choosing.
+
+= Node
