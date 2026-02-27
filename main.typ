@@ -13,6 +13,8 @@
 
 = Node
 
+Here we have 6 different badly flavored jellybeans that we can represent as $A - F$ where all possibilities can be listed as shown below.
+
 #heading(bookmarked: false, level: 2)[List]
 1. ABC
 2. ABD
