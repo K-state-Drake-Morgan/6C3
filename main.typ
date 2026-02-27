@@ -44,3 +44,5 @@ Here we have 6 different badly flavored jellybeans that we can represent as $A -
 Listing out all twenty elments works but sucks, so how could we make this easier to understand. well we have $6$ diffrent elements that we are choosing in any order, which is $binom(6, 3)$. But how can we get this awnser? Well this is 6 choose 3. $6$ oviuslly comes from how many beans we have. $3$ comes from how many beans that we are choosing.
 
 = Node
+
+We are given a hexagon with verticies labeled $A - F$. Interestingly this look supprisingly a lot like Node 1. We have $6$ total nodes of a Hexagon to choose from and we need to create a triangle from it. A triangle has $3$ sides each of diffrent nodes, so this also becomes a $binom(6,3)$.
