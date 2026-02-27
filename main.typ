@@ -46,3 +46,9 @@ Listing out all twenty elments works but sucks, so how could we make this easier
 = Node
 
 We are given a hexagon with verticies labeled $A - F$. Interestingly this look supprisingly a lot like Node 1. We have $6$ total nodes of a Hexagon to choose from and we need to create a triangle from it. A triangle has $3$ sides each of diffrent nodes, so this also becomes a $binom(6,3)$.
+
+= Node
+
+We are given a path to a node that is 3 right and 3 down. Once again this is a 6 from the total walks and 3 from how many diffrent ways to move right.
+
+= Node
