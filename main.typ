@@ -1,17 +1,33 @@
 #set document(
-  title: [Group Project 6C3]
+  title: [Group Project 6C3],
+  author: "Drake Morgan"
 )
-#set heading(numbering: (first, ..other) =>
-  if other.pos().len() == 0 { return first }
-)
+#set heading(numbering: (..nums) => {
+  let arr = nums.pos()
+
+  // Only modify top-level headings
+  if arr.len() == 1 {
+    let first = arr.at(0)
+    if first >= 8 {
+      let output = first - 7
+      output
+    } else {
+      first
+    }
+  }
+})
+
 #show heading: set align(center)
 #show heading: it => block[
   #emph(it.body)
-  #counter(heading).display(it.numbering)
+  #counter(heading).display()
 ]
 #show title: set align(center)
 
 #title()
+#context[
+  #align(center)[#document.author]
+]
 
 = Node
 
@@ -88,3 +104,78 @@ Lets make a list of possibilities:
 - $D_1 = 3$
 - $D_1 = 2, D_2 = 1$
 - $D_1 = 1, D_2 = 1, D_3 = 1$
+
+$
+  1 + 1 + 1 + 1 = D_x = 3\
+  2 + 2 + 2 = D_x = 2, D_y = 1\
+  3 + 3 = D_x = 1, D_y = 1, D_z = 1\
+  4 = D_x = 0\
+$
+
+#title("Arrows")
+
+= Arrow
+From: 1
+to: 2
+
+replace jellybeans with the vertecies of the hexagon
+
+= Arrow
+From: 2
+to: 3
+
+Label each vertex Right or Down then choose the order you arive at each vertex at
+
+= Arrow
+From: 3
+to: 4
+// I know that this should be 3 to 4, I just saw this
+// So to go from walking to cookie eating, we just assume that each time you go right you give someone a cookie and each time you go down you skip a person. This works as you then split the 4 remaining cookies evenly between you friends.
+
+Assign each route to a ball and eventually after enough walking you will count the balls
+
+= Arrow
+From: 4
+to: 5
+
+Replace the given triangle summations with the given arithmatic
+
+= Arrow
+From: 5
+to: 6
+
+Replace the numbers with the diagnal sequences in the triangles, you have 1 four long diagnal, 2 three long diagnals, som on an so forth
+
+= Arrow
+From: 6
+to: 7
+
+There are 4 triangles that make up this pryamid, instead of having balls make up the Pyramid, have your friends, the single represents giving one person 3 cookies, then 2 cookies, then 1 cookie, then 0.
+
+= Arrow
+From: 7
+To: 1
+
+Reconize that the addition needed to solve this problem is the same as for Node 1 and move it over.
+
+== General Arrow
+
+=== Tail Node
+
+All choices from Node $X$ with positions from Node $X$
+
+==== Code:
+
+The list of choices
+
+=== Head Node
+
+Create a string of $3$ 0's and $3$ 1's
+
+==== code:
+
+String
+
+=== Tail -> Head
+
+Find the list from all the permutations of the string
