@@ -61,13 +61,79 @@ Listing out all twenty elments works but sucks, so how could we make this easier
 
 = Node
 
+#heading(bookmarked: false, level: 2)[List]
+1. ABC
+2. ABD
+3. ABE
+4. ABF
+5. ACD
+6. ACE
+7. ACF
+8. ADE
+9. ADF
+10. AEF
+11. BCD
+12. BCE
+13. BCF
+14. BDE
+15. BDF
+16. BEF
+17. CDE
+18. CDF
+19. CEF
+20. DEF
+
 We are given a hexagon with verticies labeled $A - F$. Interestingly this look supprisingly a lot like Node 1. We have $6$ total nodes of a Hexagon to choose from and we need to create a triangle from it. A triangle has $3$ sides each of diffrent nodes, so this also becomes a $binom(6,3)$.
 
 = Node
 
+#heading(bookmarked: false, level: 2)[List]
+1. RRRDDD
+2. RRDDDR
+3. RDDDRR
+4. DDDRRR
+5. DDRRRD
+6. DRRRDD
+7. RDRDRD
+8. DRDRDR
+9. DDRRDR
+10. RRDDRD
+11. RDRRDD
+12. DRDDRR
+13. RRDRDD
+14. RDRDDR
+15. RDDRRD
+16. RDDRDR
+17. DRRDRD
+18. DRRDDR
+19. DRDRRD
+20. DDRDRR
+
 We are given a path to a node that is 3 right and 3 down. Once again this is a 6 from the total walks and 3 from how many diffrent ways to move right.
 
 = Node
+
+#heading(bookmarked: false, level: 2)[List]
+1. T1,1
+2. T2,1
+3. T2,2
+4. T2,3
+5. T3,1
+6. T3,2
+7. T3,3
+8. T3,4
+9. T3,5
+10. T4,1
+11. T4,2
+12. T4,3
+13. T4,4
+14. T4,5
+15. T4,6
+16. T4,7
+17. T4,8
+18. T4,9
+19. T4,10
+20. T4,11
 
 We are given 4 triangles made up of an increasing number of points. We are asked to sum up to total number of dots. Notably triangle numbers exist, which are defined in such a way to solve this problem. so our awnser looks like:
 $
@@ -82,7 +148,52 @@ We are asked to sum up $1*4+2*3+3*2+4*1$ which equals $20$
 
 We are asked to sum all the balls making up a Pyramid. A pyramid is just 4 triangles of balls put togeather or problem 4.
 
+#heading(bookmarked: false, level: 2)[List]
+1. T1,1
+2. T2,1
+3. T2,2
+4. T2,3
+5. T3,1
+6. T3,2
+7. T3,3
+8. T3,4
+9. T3,5
+10. T4,1
+11. T4,2
+12. T4,3
+13. T4,4
+14. T4,5
+15. T4,6
+16. T4,7
+17. T4,8
+18. T4,9
+19. T4,10
+20. T4,11
+
+
 = Node
+
+#heading(bookmarked: false, level: 2)[List]
+1. (4,1,1,1)
+2. (3,2,1,1)
+3. (3,1,2,1)
+4. (3,1,1,2)
+5. (2,3,1,1)
+6. (2,1,3,1)
+7. (2,1,1,3)
+8. (2,2,2,1)
+9. (2,2,1,2)
+10. (2,1,2,2)
+11. (1,4,1,1)
+12. (1,1,4,1)
+13. (1,1,1,4)
+14. (1,3,2,1)
+15. (1,3,1,2)
+16. (1,2,3,1)
+17. (1,2,1,3)
+18. (1,1,3,2)
+19. (1,2,2,2)
+20. (1,1,2,3)​
 
 How many ways can 7 cookies be split between 4 people where each person gets atleast 1 cookie. This looks like:
 
